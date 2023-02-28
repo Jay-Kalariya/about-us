@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+.about{
+    background: url(about.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: white;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-section{
+    width: 55%;
+    float: right;
+    background-color: #d39393;
+    padding: 140px;
+    box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 20px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+.skills a {
+    background-color: #fff;
+    color: #00a8b4;
+    text-decoration: none;
+    padding: 17px 45px;
+    margin-top: 25px;
+    text-shadow: #00a8b4;
+    display: inline-flex;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skills a:hover {
+    color: #fff;
+}
+
+.skills a:after {
+    content: "Contact Us";
+    background-color: #00a8b4;
+    width: 0%;
+    font-size: 19px;
+    text-align: center;
+    height: 100%;
+    line-height: 50px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    right: 0;
+}
+
+.skills a:hover:after {
+    width: 100%;
+}
+
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
